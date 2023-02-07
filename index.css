@@ -1,0 +1,168 @@
+*{
+  font-family: 'Crimson Pro', serif;
+}
+
+body{
+  background-color: #09070e;
+}
+
+#app {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.card {
+  background-color: #d9cdf7;
+  width: 875px;
+  height: 500px;
+  border-radius: 10px;
+}
+
+.columns {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  height: 100%;
+}
+
+.column {
+  order: 1px solid red;
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+}
+
+.product{
+  align-items: center;
+  justify-content: center;
+}
+
+.controllers {
+  position: absolute;
+  top: 20vh;
+  left: 50vw;
+  cursor: pointer;
+}
+
+.imageContainer svg {
+  width: 449px;
+  height: 253px;
+}
+
+.details {
+  align-items: left;
+  justify-content: center;
+  color: #271A45;
+}
+
+.details span#code {
+  border-bottom: 12px;
+  font-size: 10px;
+  font-weight: 300;
+}
+
+.details strong.name-product {
+  margin-bottom: 12px;
+  font-size: 32px;
+  font-weight: 600;
+}
+
+.details span.price {
+  margin-bottom: 20px;
+  font-size: 16px;
+  font-weight: 400;
+}
+
+button.add-cart{
+  font-size: 12px;
+  font-weight: 400;
+  background: rgba(0,0,0,0);
+  align-items: center;
+  padding: 8px 16px;
+  border-radius: 99px;
+  border: 0.5px solid #271A45;
+  cursor: pointer;
+}
+
+@media (min-width: 850px) {
+.controllers {
+    position: absolute;
+    top: 20vh;
+    left: 45vw;
+    cursor: pointer;
+  }
+}
+@media (max-width: 850px){
+  
+  button.add-cart{
+    font-size: 12px;
+    width: 240px;
+  }
+}
+
+@media (max-width: 720px) {
+  .card {
+    background-color: #d9cdf7;
+    width: 600px;
+    height: 350px;
+    border-radius: 10px;
+  }
+  .imageContainer svg {
+    width: 320px;
+    height: 240px;
+  }
+  .imageContainer img {
+    width: 320px;
+    height: 180px;
+  }
+  .controllers {
+    position: absolute;
+    top: 14vh;
+    left: 46vw;
+    cursor: pointer;
+  }
+  button.add-cart{
+    font-size: 12px;
+    width: 150px;
+  }
+  iframe {
+    width: 320px;
+    height: 240px;
+  }
+}
+
+@media (max-width: 560px) {
+  .card {
+    background-color: #d9cdf7;
+    width: 420px;
+    height: 250px;
+    border-radius: 10px;
+  }
+
+  .imageContainer svg {
+    width: 249px;
+    height: 180px;
+  }
+  .imageContainer img {
+    width: 249px;
+    height: 140px;
+  }
+  iframe {
+    width: 249px;
+    height: 140px;
+  }
+  .controllers {
+    position: absolute;
+    top: 8vh;
+    left: 48vw;
+    cursor: pointer;
+  }
+  .details strong.name-product {
+    font-size: 24px;
+  }
+  button.add-cart{
+    font-size: 12px;
+    width: 150px;
+  }
+}
